@@ -1,0 +1,52 @@
+header {
+  position: relative;
+  text-align: center;
+  background-image: url("https://www.rekupe.com/wp-content/uploads/2019/01/HP_Background.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 75vh;
+}
+header h1 {
+  color: white;
+  font-size: 58px;
+  font-family: "PT Serif", serif;
+  padding: 170px 0px 0px 0px;
+  line-height: 1;
+  letter-spacing: -2px;
+}
+
+header p {
+  margin: 34px 0px 0px 0px;
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: white;
+}
+header button {
+  color: white;
+  background-color: #ed4385;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  border-radius: 40px;
+  font-size: 18px;
+  margin: 35px 0px 0px 0px;
+  padding: 23px 40px 23px 40px;
+  box-shadow: 0px 13px 22px -8px rgba(0, 0, 0, 0.3);
+  letter-spacing: 1px;
+  transition: 0.2s;
+}
+header button:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+  cursor: pointer;
+}
+header .Triangle {
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 100px 0 0 100vw;
+  border-color: transparent transparent transparent #ffffff;
+}

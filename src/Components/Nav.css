@@ -1,4 +1,6 @@
 nav {
+  z-index: 2;
+  position: relative;
   font-family: "Roboto", sans-serif;
 }
 nav ul {
