@@ -1,0 +1,61 @@
+.Main {
+  background-color: white;
+  height: 80vh;
+  z-index: 2;
+  position: relative;
+}
+.Main .text {
+  margin-top: 260px;
+  text-align: center;
+  font-family: "PT Serif", serif;
+  font-size: 30px;
+  color: #5722cd;
+}
+.Main p {
+  margin-bottom: 40px;
+}
+.Main .underText {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 21px;
+  margin-top: 100px;
+}
+.Main .underText a {
+  color: #5722cd;
+  text-decoration: none;
+}
+.backgroundText {
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  color: #5822cd13;
+  font-size: 600px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: -1;
+  overflow: hidden;
+}
+
+/* Animations */
+.Main .text {
+  visibility: hidden;
+  animation-name: easeIn;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes easeIn {
+  0% {
+    animation-timing-function: ease;
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    animation-timing-function: ease;
+    opacity: 1;
+    visibility: visible;
+  }
+}
