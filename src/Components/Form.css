@@ -1,0 +1,73 @@
+.form-neutral {
+  background: rgb(87, 34, 205);
+  background: linear-gradient(
+    180deg,
+    rgba(87, 34, 205, 1) 50%,
+    rgba(64, 84, 178, 1) 100%
+  );
+}
+.form-wrap {
+  padding-top: 50px;
+  max-width: 770px;
+  margin: auto;
+}
+.form h1 {
+  padding-bottom: 20px;
+  color: white;
+  font-size: 54px;
+  text-align: center;
+}
+.form p {
+  font-size: 22px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  padding-bottom: 25px;
+}
+.form form label {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 17px;
+}
+.form form input {
+  margin-bottom: 30px;
+  padding: 5px;
+  height: 25px;
+  width: 100%;
+}
+.form form textarea {
+  font-family: "Roboto", sans-serif;
+  resize: none;
+  padding: 5px;
+  width: 100%;
+}
+.form form .button {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+.form form .button button {
+  cursor: pointer;
+  transition-duration: 0.3s;
+  box-shadow: -1px 13px 15px -1px rgba(0, 0, 0, 0.24);
+  border-radius: 30px;
+  padding: 12px 90px 12px 90px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-size: 18px;
+  color: white;
+  background-color: #ed4385;
+  border: none;
+}
+/*Hovers*/
+.form form .button button:hover {
+  transform: scale(1.1);
+}
+/*Responsivnes*/
+@media (max-width: 764px) {
+  .form-wrap {
+    width: 90%;
+  }
+}

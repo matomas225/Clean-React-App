@@ -38,6 +38,7 @@
   overflow: hidden;
 }
 .Triangle {
+  z-index: -1;
   position: absolute;
   bottom: 0;
   border-style: solid;
@@ -64,5 +65,19 @@
     animation-timing-function: ease;
     opacity: 1;
     visibility: visible;
+  }
+}
+/*Responsivnes*/
+@media (max-width: 1200px) {
+  .backgroundText {
+    font-size: 300px;
+  }
+}
+@media (max-width: 768px) {
+  .backgroundText {
+    font-size: 150px;
+  }
+  .Main .text {
+    font-size: 25px;
   }
 }

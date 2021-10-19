@@ -24,6 +24,7 @@ header p {
   color: white;
 }
 header button {
+  z-index: 5;
   color: white;
   background-color: #ed4385;
   font-family: "Roboto", sans-serif;
@@ -42,6 +43,7 @@ header button:hover {
   cursor: pointer;
 }
 header .Triangle {
+  z-index: 1;
   position: absolute;
   bottom: 0;
   border-style: solid;
@@ -74,5 +76,19 @@ header button {
     margin-bottom: 0px;
     top: 0px;
     visibility: visible;
+  }
+}
+/*Responsivnes*/
+@media (max-width: 1200px) {
+}
+@media (max-width: 764px) {
+  header h1 {
+    font-size: 30px;
+  }
+  header p {
+    font-size: 20px;
+  }
+  header button {
+    font-size: 16px;
   }
 }

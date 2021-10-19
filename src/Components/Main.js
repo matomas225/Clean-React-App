@@ -1,9 +1,22 @@
 import "./Main.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function Main() {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
-    <section className="Main">
-      <div className="backgroundText">hello</div>
+    <section
+      className="Main"
+      data-aos="fade-up"
+      data-aos-easing="ease-in-sine"
+      data-aos-once="true"
+    >
+      <div className="backgroundText" id="about">
+        hello
+      </div>
       <div className="text">
         <p>Rekupe is a digital agency in Los Angeles.</p>
         <p>

@@ -6,7 +6,19 @@
   margin: 0;
   padding: 0;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: rgb(255, 255, 255);
+}
+@media (max-width: 1200px) {
+  .nav-disapear {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .bm-burger-button {
+    display: none;
+  }
 }

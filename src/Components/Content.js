@@ -1,16 +1,27 @@
 import React from "react";
 import "./Content.css";
-import { useState } from "react";
-import Tilt from "react-parallax-tilt";
 import Card from "./Card";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 function Content() {
   //states
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   //functions
   return (
     <div className="container">
-      <div className="background-text">work</div>
+      <div className="background-text" id="case">
+        work
+      </div>
       <div className="content">
-        <div className="card-left">
+        <div
+          className="card-left"
+          data-aos="fade-left"
+          data-aos-delay="600"
+          data-aos-once="true"
+        >
           <div className="text">
             <h1>Rolling Stone</h1>
             <p>
@@ -27,7 +38,12 @@ function Content() {
             }
           />
         </div>
-        <div className="card-right">
+        <div
+          className="card-right"
+          data-aos="fade-right"
+          data-aos-delay="600"
+          data-aos-once="true"
+        >
           <Card
             positive={true}
             url={
@@ -46,7 +62,12 @@ function Content() {
             </a>
           </div>
         </div>
-        <div className="card-left">
+        <div
+          className="card-left"
+          data-aos="fade-left"
+          data-aos-delay="600"
+          data-aos-once="true"
+        >
           <div className="text">
             <h1>Variety500</h1>
             <p>
@@ -61,7 +82,12 @@ function Content() {
             url={"https://www.rekupe.com/wp-content/uploads/2019/05/V500.jpg"}
           />
         </div>
-        <div className="card-right">
+        <div
+          className="card-right"
+          data-aos="fade-right"
+          data-aos-delay="600"
+          data-aos-once="true"
+        >
           <Card
             positive={true}
             url={
@@ -79,7 +105,12 @@ function Content() {
             </a>
           </div>
         </div>
-        <div className="card-left">
+        <div
+          className="card-left"
+          data-aos="fade-left"
+          data-aos-delay="600"
+          data-aos-once="true"
+        >
           <div className="text">
             <h1>Association Health Plans</h1>
             <p>
@@ -95,7 +126,12 @@ function Content() {
             url={"https://www.rekupe.com/wp-content/uploads/2019/05/AHP.jpg"}
           />
         </div>
-        <div className="card-right">
+        <div
+          className="card-right"
+          data-aos="fade-right"
+          data-aos-delay="600"
+          data-aos-once="true"
+        >
           <Card
             positive={true}
             url={
